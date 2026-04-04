@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Orders</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="main">
+    <h2>Order System</h2>
+
+    <button onclick="location.href='dashboard.html'">Back</button>
+
+    <div class="card">
+        <h3>Create Order</h3>
+        <input type="text" id="tableNo" placeholder="Table Number">
+        <input type="text" id="orderItem" placeholder="Item Name">
+        <input type="number" id="quantity" placeholder="Quantity">
+        <button onclick="addOrder()">Add Order</button>
+    </div>
+
+    <div class="card">
+        <h3>Orders</h3>
+        <ul id="orderList"></ul>
+    </div>
+
+    <div class="card">
+        <h3>Total Bill</h3>
+        <h2>₹ <span id="total">0</span></h2>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Menu Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="main">
+    <h2>Menu Management</h2>
+
+    <button onclick="location.href='dashboard.html'">Back</button>
+
+    <div class="card">
+        <h3>Add New Item</h3>
+        <input type="text" id="itemName" placeholder="Item Name">
+        <input type="number" id="itemPrice" placeholder="Price">
+        <input type="text" id="itemCategory" placeholder="Category">
+        <button onclick="addItem()">Add Item</button>
+    </div>
+
+    <div class="card">
+        <h3>Menu List</h3>
+        <ul id="menuList"></ul>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
