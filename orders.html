@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
     <title>Orders</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -13,20 +14,17 @@
 
     <div class="card">
         <h3>Create Order</h3>
-        <input type="text" id="tableNo" placeholder="Table Number">
-        <input type="text" id="orderItem" placeholder="Item Name">
+
+        <input type="text" id="tableNo" placeholder="Table Number (e.g. 1)">
+        <input type="text" id="orderItem" placeholder="Item Name (must match menu)">
         <input type="number" id="quantity" placeholder="Quantity">
+
         <button onclick="addOrder()">Add Order</button>
     </div>
 
     <div class="card">
-        <h3>Orders</h3>
+        <h3>Orders (Live)</h3>
         <ul id="orderList"></ul>
-    </div>
-
-    <div class="card">
-        <h3>Total Bill</h3>
-        <h2>₹ <span id="total">0</span></h2>
     </div>
 </div>
 
